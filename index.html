@@ -10,10 +10,17 @@
         <!-- Embedded Content Section -->
         <section>
             <iframe
-                src="https://pg-13-gettinglost-gui-test.hf.space"
-                frameborder="0"
-                width="100%"
-                height="100%"
+                	id="your-iframe-id"
+                	src="https://pg-13-gettinglost-gui-test.hf.space"
+                	frameborder="0"
+                	width="850"
+                	height="450"
+                ></iframe>
+                <script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.3.4/js/iframeResizer.min.js"></script>
+                <script>
+                    iFrameResize({}, "#your-iframe-id")
+                </script>
+                </script>
             ></iframe>
         </section>
     </main>
