@@ -9,13 +9,14 @@
     <main>
         <!-- Embedded Content Section -->
         <section>
-            <iframe
-                	id="your-iframe-id"
-                	src="https://pg-13-gettinglost-gui-test.hf.space"
-                	frameborder="0"
-                	width= "100vw"
-                	height= "100vh"
-                </iframe>
+                iframe {
+                            src="https://pg-13-gettinglost-gui-test.hf.space"
+                            display: block;       /* iframes are inline by default */
+                            background: #000;
+                            border: none;         /* Reset default border */
+                            height: 100vh;        /* Viewport-relative units */
+                            width: 100vw;
+                        }
                 <script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.3.4/js/iframeResizer.min.js"></script>
                 <script>
                     iFrameResize({}, "#your-iframe-id")
